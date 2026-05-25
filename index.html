@@ -8,12 +8,12 @@
 </head>
 <body class="bg-[#2561A0] min-h-screen flex items-center justify-center font-sans antialiased p-4">
 
-    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-8 w-full max-w-md shadow-2xl text-white flex flex-col items-center">
+    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-6 sm:p-8 w-full max-w-md shadow-2xl text-white flex flex-col items-center">
        
-        <div class="flex gap-2 w-full mb-8">
+        <div class="flex flex-wrap sm:flex-nowrap gap-3 w-full mb-8">
             <input type="text" placeholder="Enter city name" 
-                   class="search-input flex-1 px-4 py-3 text-lg rounded-xl bg-white/20 border border-white/10 placeholder-white/60 text-white focus:outline-none focus:ring-2 focus:ring-white/40 transition-all">
-            <button class="search-btn bg-white/20 hover:bg-white/30 px-5 py-3 rounded-xl border border-white/10 text-xl cursor-pointer transition-colors active:scale-95">
+                   class="search-input min-w-0 flex-1 px-4 py-3 text-lg rounded-xl bg-white/20 border border-white/10 placeholder-white/60 text-white focus:outline-none focus:ring-2 focus:ring-white/40 transition-all">
+            <button class="search-btn shrink-0 bg-white/20 hover:bg-white/30 px-5 py-3 rounded-xl border border-white/10 text-xl cursor-pointer transition-colors active:scale-95">
                 🔍
             </button>
         </div>
@@ -28,10 +28,10 @@
                 <h2 class="city-name text-2xl font-medium text-white/80">Kerala</h2>
             </div>
 
-            <div class="grid grid-cols-2 gap-4 w-full border-t border-white/10 pt-6 mt-2">
+            <div class="grid grid-cols-1 xs:grid-cols-2 gap-4 w-full border-t border-white/10 pt-6 mt-2">
                 
                 <div class="humidity flex items-center gap-3 bg-white/5 p-4 rounded-2xl border border-white/5">
-                    <div class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-xl">
+                    <div class="w-10 h-10 shrink-0 flex items-center justify-center bg-white/10 rounded-xl">
                         <span class="text-xl">💧</span> 
                     </div>
                     <div class="text-left">
@@ -41,7 +41,7 @@
                 </div>
 
                 <div class="wind flex items-center gap-3 bg-white/5 p-4 rounded-2xl border border-white/5">
-                    <div class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-xl">
+                    <div class="w-10 h-10 shrink-0 flex items-center justify-center bg-white/10 rounded-xl">
                         <span class="text-xl">💨</span>
                     </div>
                     <div class="text-left">
